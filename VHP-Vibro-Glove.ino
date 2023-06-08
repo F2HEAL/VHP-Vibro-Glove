@@ -22,7 +22,11 @@ using namespace audio_tactile;
 static uint16_t sin_wave[8];
 static uint16_t silence[8] = {0};  // all zeros for no vibration output.
 
-int order_pairs[8] = {0, 3, 4, 5, 11, 9, 8, 6};
+// Output sequence for board Apollo84 hardware
+//int order_pairs[8] = {0, 3, 4, 5, 11, 9, 8, 6};
+
+// Output sequence for Godef Hardware
+int order_pairs[8] = {4, 5, 6, 7, 8, 9, 10, 11}; 
 
 void OnPwmSequenceEnd();
 
