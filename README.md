@@ -27,6 +27,10 @@ Then, import each library using the ZIP file in the same manner as before.
 
 ### 4. Add the Adafruit nRF52 board to Arduino
 
+Go to Arduino Preferences. Add http://adafruit.github.io/arduino-board-index/package_adafruit_index.json to Additional Board Manager URLs. For additional details see [Adafruit installation guide.](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/arduino-bsp-setup)
+
+![Alt text](image.png)
+
 On the left sidebar of the Arduino IDE, select the Boards Manager tab.
 
 Search for "Adafruit nRF52", and select install on the package.
