@@ -50,6 +50,14 @@ void setup() {
 
   SleeveTactors.OnSequenceEnd(OnPwmSequenceEnd);
   SleeveTactors.Initialize();
+
+  // The default Samplingrate [1] is not set correctly [2] and thus becomes defacto 
+  // sampling rate of 9. Use SetUpsamplingFactor [3] to set the correct samplingrate.
+  // [1] - https://github.com/google/audio-to-tactile/blob/3be62006ecf7a95962d7520e23e69258e64e49bd/src/pwm_sleeve.h#L75
+  // [2] - https://github.com/google/audio-to-tactile/blob/3be62006ecf7a95962d7520e23e69258e64e49bd/src/pwm_sleeve.cpp#L87
+  // [3] - https://github.com/google/audio-to-tactile/blob/3be62006ecf7a95962d7520e23e69258e64e49bd/src/pwm_sleeve.cpp#L108
+  SleeveTactors.SetUpsamplingFactor(8);
+
   // Warning: issue only in Arduino. When using StartPlayback() it crashes.
   // Looks like NRF_PWM0 module is automatically triggered, and triggering it
   // again here crashes ISR. Temporary fix is to only use nrf_pwm_task_trigger
