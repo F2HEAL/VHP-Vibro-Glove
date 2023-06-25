@@ -41,7 +41,11 @@ Hopefully, the board will now be available to select at near the top of the Ardu
 
 If the board does not show, try removing the battery if there is one, make sure it is turned on, and hold the reset button while plugging it in.
 
-### 5. Upload the program to the board
+### 5. Install Arduino CLI (optional)
+
+Follow [the instructions](https://github.com/arduino/arduino-cli) to install Arduino CLI. It uses the same libraries as Arduino IDE.
+
+### 6. Upload the program to the board
 
 Simply press the upload button at the top of the Arduino IDE (the arrow).
 
