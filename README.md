@@ -6,7 +6,7 @@
 
 Begin by downloading and installing the [Arduino IDE](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE).
 
-### 1. Download this program
+### 1. Download this code
 
 Select the green **"Code"** button on the page, and select the Download ZIP option from the dropdown. <br>
 Extract the folder, and open the .ino file using the Arduino IDE.
