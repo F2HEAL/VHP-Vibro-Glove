@@ -2,6 +2,8 @@
 
 ## Setup & Installation Guide
 
+### 0. Download and install Arduino IDE
+
 Begin by downloading and installing the [Arduino IDE](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE).
 
 ### 1. Download this program
