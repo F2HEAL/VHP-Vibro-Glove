@@ -29,7 +29,7 @@ Then, import each library using the ZIP file in the same manner as before.
 
 ### 4. Add the Adafruit nRF52 board to Arduino
 
-Go to Arduino Preferences. Add http://adafruit.github.io/arduino-board-index/package_adafruit_index.json to Additional Board Manager URLs. For additional details see [Adafruit installation guide.](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/arduino-bsp-setup)
+Go to Arduino Preferences. Add https://adafruit.github.io/arduino-board-index/package_adafruit_index.json to Additional Board Manager URLs. For additional details see [Adafruit installation guide.](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/arduino-bsp-setup)
 
 ![Alt text](image.png)
 
@@ -49,6 +49,12 @@ Follow [the instructions](https://github.com/arduino/arduino-cli) to install Ard
 
 ### 6. Upload the program to the board
 
+Connect the VHP board to the PC with a micro USB B cable and switch the board ON with its POWER switch.
+
+Select Board
+"Adafruit Feather nRF52840 Express"
+and COM Port
+ 
 Simply press the upload button at the top of the Arduino IDE (the arrow).
 
 The Arduino IDE will output information about the compilation and upload. <br>
